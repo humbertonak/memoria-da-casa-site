@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Memória da Casa: um assistente pelo WhatsApp para organizar informações do dia a dia da sua casa.">
+  <meta name="theme-color" content="#143c36">
+  <title>Memória da Casa | Sua casa, mais organizada</title>
+  <style>
+    :root{color-scheme:light;--ink:#17362f;--muted:#526760;--green:#176e58;--cream:#f7f8f4;--line:#dce5df}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+    .wrap{width:min(940px,calc(100% - 40px));margin:auto}header{border-bottom:1px solid var(--line);background:#fff}header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:18px} .brand{font-weight:800;letter-spacing:-.03em;font-size:1.15rem}nav a{color:var(--muted);font-size:.88rem;text-decoration:none;margin-left:16px}nav a:hover{color:var(--green)}
+    main{padding:72px 0 45px}.eyebrow{display:inline-block;background:#e4f2e9;border-radius:100px;padding:5px 13px;color:#1d654d;font-size:.82rem;font-weight:700}.hero{max-width:750px}.hero h1{font-size:clamp(2.3rem,6vw,4.2rem);letter-spacing:-.055em;line-height:1.1;margin:24px 0}.hero p{font-size:1.16rem;color:var(--muted);max-width:650px;margin-bottom:24px}.note{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:10px 15px;color:var(--muted);font-size:.9rem;background:white}
+    section{padding:55px 0;border-top:1px solid var(--line)}h2{font-size:1.65rem;letter-spacing:-.035em;margin:0 0 16px}p{margin:0 0 15px}section>p,.intro{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.feature{padding:24px;background:white;border:1px solid var(--line);border-radius:17px}.feature h3{font-size:1rem;margin:0 0 10px}.feature p{font-size:.93rem;color:var(--muted);margin:0}.legal{max-width:780px}.legal h3{font-size:1.03rem;margin:24px 0 7px}.legal p{color:var(--muted)}footer{background:#143c36;color:#d9e8df;padding:28px 0;font-size:.85rem}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#d9e8df}
+    @media(max-width:650px){main{padding:50px 0 35px}header .wrap{align-items:flex-start;flex-direction:column;gap:8px}nav a{margin:0 15px 0 0}.grid{grid-template-columns:1fr}section{padding:40px 0}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">Memória da Casa</div><nav aria-label="Navegação"><a href="#como-funciona">Como funciona</a><a href="#privacidade">Privacidade</a></nav></div></header>
+<main class="wrap">
+  <div class="hero">
+    <span class="eyebrow">Assistente para organização doméstica</span>
+    <h1>Sua casa tem muita informação. Agora ela pode ter memória.</h1>
+    <p>A Memória da Casa é um serviço em desenvolvimento que ajuda a registrar e consultar informações do dia a dia da sua casa, de forma simples, por mensagens no WhatsApp.</p>
+    <div class="note">Em fase de testes · Acesso inicial limitado</div>
+  </div>
+  <section id="como-funciona">
+    <h2>Como funciona</h2>
+    <p class="intro">Você conversa com o assistente para guardar informações e encontrá-las quando precisar.</p>
+    <div class="grid">
+      <article class="feature"><h3>Despesas e receitas</h3><p>Registre valores e consulte os lançamentos que você informou.</p></article>
+      <article class="feature"><h3>Objetos e locais</h3><p>Anote onde guardou itens e recupere essas informações depois.</p></article>
+      <article class="feature"><h3>Garantias e manutenção</h3><p>Organize referências sobre compras, garantias e cuidados com a casa.</p></article>
+    </div>
+  </section>
+  <section id="privacidade" class="legal">
+    <h2>Privacidade e dados</h2>
+    <p>A Memória da Casa está em fase de desenvolvimento e testes. Esta seção apresenta informações gerais sobre o tratamento de dados no serviço.</p>
+    <h3>Quais dados são tratados?</h3>
+    <p>Podem ser tratados o número de telefone utilizado para acessar o serviço, mensagens enviadas ao assistente e informações que a própria pessoa decidir registrar, como despesas, localização de objetos e anotações domésticas.</p>
+    <h3>Para quais finalidades?</h3>
+    <p>Os dados são utilizados para identificar usuários autorizados, interpretar solicitações, registrar e consultar informações, responder às mensagens e manter a segurança e o funcionamento do serviço.</p>
+    <h3>Serviços de terceiros</h3>
+    <p>O funcionamento pode envolver provedores de mensagens, infraestrutura de armazenamento e processamento por inteligência artificial. O uso do WhatsApp também está sujeito às políticas da Meta.</p>
+    <h3>Seus cuidados</h3>
+    <p>Evite enviar senhas, dados bancários completos ou outras informações altamente sensíveis pelo assistente.</p>
+    <h3>Solicitações sobre dados</h3>
+    <p>Durante a fase de testes, solicitações de acesso, correção ou exclusão de dados devem ser encaminhadas diretamente ao responsável pelo piloto, pelo canal de contato disponibilizado aos participantes.</p>
+    <p><small>Esta página é informativa e deverá ser revisada antes do lançamento comercial do serviço.</small></p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Memória da Casa · Projeto em desenvolvimento</span><span><a href="#privacidade">Privacidade</a></span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
